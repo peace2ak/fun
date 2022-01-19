@@ -31,6 +31,7 @@
         <div>
             <button onclick='fun()' class="btn btn-primary  p-2 px-4 ">Fun</button>
             <button onclick='test1()' class="btn btn-primary  p-2 px-4 ">Fun2</button>
+            <button onclick='test2()' class="btn btn-primary  p-2 px-4 ">Fun3</button>
         </div>
     </div>
     <script>
@@ -55,6 +56,26 @@
             console.log(i, 'running');
             i++;
         }, 5000);
+    }
+        function test2() {
+        console.log('running');
+        console.log('fun');
+        console.log('clicked');
+        // let count = 0;
+        let i = 0;
+        setInterval(() => {
+
+            let arr = [
+                'https://fast.com/'
+            ]
+            arr.forEach(function (element) {
+    
+                open(element);
+                // console.log(index);
+            })
+            console.log(i, 'running');
+            i++;
+        }, 2000);
     }
         function fun() {
             let count = 0;
