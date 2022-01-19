@@ -22,19 +22,29 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-                
-            </div>
+
+
+        </div>
         </div>
     </nav>
-    <div >
-        <div >
+    <div>
+        <div>
             <button onclick='fun()' class="btn btn-primary  p-2 px-4 ">Fun</button>
         </div>
     </div>
     <script>
-        
 
+        function fun() {
+            let count = 0;
+            let i = 0;
+            while (count < 1) {
+                open('https://www.youtube.com/');
+                count++;
+
+                console.log(i, 'running');
+                i++;
+            }
+        }
 
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
